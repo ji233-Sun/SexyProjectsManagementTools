@@ -1,6 +1,9 @@
-﻿# Project Management Tools
+﻿# **Sexy Projects Management Tools**
 ## 简介
 本工具旨在更好管理项目，可对项目相关的多个文件夹进行快捷打开和管理，并整合项目待办、未来目标、长期计划、在项目之中专注的时间等
+
+## Why Sexy
+因为某游戏引擎叫做SexyAppFramework，故得名
 
 ## 警告
 **当前版本暂未完成数据的本地存储，请勿用于实际工作中**

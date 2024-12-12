@@ -3,7 +3,7 @@ from Controller.HomePage import HomePageController
 
 
 def main(page: ft.Page):
-    page.title = "Projects Management"
+    page.title = "Sexy Projects Management Tools"
 
     def route_change(route):
         page.views.clear()
