@@ -6,7 +6,6 @@ from Tools import openPath
 class ProjectBoxController(ft.Row):
     def __init__(self, project_name, project_folder):
         super().__init__()
-        self.is_isolated = True
         self.project_folder = project_folder
 
         def get_directory_result(e: FilePickerResultEvent):

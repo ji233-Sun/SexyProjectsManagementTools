@@ -6,7 +6,6 @@ from Controller.HomePage.ProjectBoxController import ProjectBoxController
 class HomePageController(ft.Column):
     def __init__(self):
         super().__init__()
-        self.is_isolated = True
         self.controls = [
             ft.FloatingActionButton(
                 icon=ft.Icons.ADD,
