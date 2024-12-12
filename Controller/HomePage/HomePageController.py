@@ -9,7 +9,7 @@ class HomePageController(ft.Column):
         self.is_isolated = True
         self.controls = [
             ft.FloatingActionButton(
-                icon=ft.icons.ADD,
+                icon=ft.Icons.ADD,
                 on_click=self.add_button_on_click
             )
         ]

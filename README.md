@@ -30,3 +30,17 @@ Step 2: 运行项目
 ```bash
 python main.py
 ```
+或(推荐)
+```bash
+flet run
+```
+
+**自行构建(需要flutter开发环境)**
+```bash
+flet build <targeted_platform>
+```
+或(仅可构建当前平台运行文件)
+```bash
+pip install pyinstaller
+pyinstaller main.py
+```
