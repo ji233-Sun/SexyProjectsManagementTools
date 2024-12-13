@@ -1,5 +1,6 @@
 ﻿import flet as ft
 from controllers.HomePage import HomePageController
+from controllers.ProjectManagePage.ProjectManagePageController import ProjectManagePageController
 
 
 def main(page: ft.Page):
@@ -14,9 +15,9 @@ def main(page: ft.Page):
                     [
                         ft.AppBar(
                             title=ft.Text("Home"),
-                            bgcolor=ft.colors.SURFACE_VARIANT,
+                            bgcolor=ft.Colors.GREY_900,
                         ),
-                        HomePageController.HomePageController()
+                        HomePageController.HomePageController(page)
                     ],
                 )
             )
@@ -27,8 +28,13 @@ def main(page: ft.Page):
                     [
                         ft.AppBar(
                             title=ft.Text("Project"),
-                            bgcolor=ft.colors.SURFACE_VARIANT,
-                        )
+                            bgcolor=ft.Colors.GREY_900,
+                            leading=ft.IconButton(
+                                ft.Icons.HOME,
+                                on_click=lambda _: page.go("/"),
+                            ),
+                        ),
+                        ProjectManagePageController(page)
                     ],
                 )
             )
@@ -39,6 +45,7 @@ def main(page: ft.Page):
         top_view = page.views[-1]
         page.go(top_view.route)
 
+    page.views.clear()
     page.on_route_change = route_change
     page.on_view_pop = view_pop
     page.go(page.route)
