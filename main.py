@@ -20,6 +20,18 @@ def main(page: ft.Page):
                     ],
                 )
             )
+        if page.route == "/project":
+            page.views.append(
+                ft.View(
+                    "/project",
+                    [
+                        ft.AppBar(
+                            title=ft.Text("Project"),
+                            bgcolor=ft.colors.SURFACE_VARIANT,
+                        )
+                    ],
+                )
+            )
         page.update()
 
     def view_pop(view):
