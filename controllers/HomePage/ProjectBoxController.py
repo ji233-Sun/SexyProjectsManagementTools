@@ -1,7 +1,7 @@
 ﻿import flet as ft
 from flet.core.file_picker import FilePickerResultEvent, FilePicker
 
-from Tools import openPath
+from utils import openPath
 
 class ProjectBoxController(ft.Row):
     def __init__(self, project_name, project_folder):

@@ -1,9 +1,9 @@
 ﻿import flet as ft
-from Controller.HomePage import HomePageController
+from controllers.HomePage import HomePageController
 
 
 def main(page: ft.Page):
-    page.title = "Sexy Projects Management Tools"
+    page.title = "Sexy Projects Management utils"
 
     def route_change(route):
         page.views.clear()

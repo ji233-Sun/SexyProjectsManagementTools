@@ -1,6 +1,6 @@
 ﻿import flet as ft
 
-from Controller.HomePage.ProjectBoxController import ProjectBoxController
+from controllers.HomePage.ProjectBoxController import ProjectBoxController
 
 
 class HomePageController(ft.Column):
