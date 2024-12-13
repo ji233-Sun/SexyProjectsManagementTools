@@ -12,6 +12,10 @@ def main(page: ft.Page):
                 ft.View(
                     "/",
                     [
+                        ft.AppBar(
+                            title=ft.Text("Home"),
+                            bgcolor=ft.colors.SURFACE_VARIANT,
+                        ),
                         HomePageController.HomePageController()
                     ],
                 )
